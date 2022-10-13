@@ -1,3 +1,7 @@
+Asked in :-- Accolite, Adobe, Amazon, KLA Tencor, Kritikal Solutions, Microsoft, Snapdeal, Yodlee, Infotech, MakeMyTrip
+REFER GFG
+
+
 Approach 1:-->
 
   #include<vector>
