@@ -2,6 +2,8 @@ O(n2) -- take two loops and count how many of unsorted pairs are there in which 
 
 O(nlogn) -- use merge sort concept
   
+  // CODE STARTED
+  
  long long merge(long long arr[], long long low, long long mid,  long long high){
   long long ans=0;
   long long  len1= mid-low+1;
