@@ -62,6 +62,5 @@ APPROACH - STACKS  ("GFG")
             return -1;
         
         return ans;
-        
     }
 };
