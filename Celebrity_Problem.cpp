@@ -1,4 +1,6 @@
 APPROACH - STACKS  ("GFG")
+  TC -->
+  SC -->
   
   private:
     bool knows(vector<vector<int> >& M, int a, int b, int n) {
@@ -62,6 +64,5 @@ APPROACH - STACKS  ("GFG")
             return -1;
         
         return ans;
-        
     }
 };
