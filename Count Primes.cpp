@@ -22,3 +22,27 @@ public:
         return count;
     }
 };
+
+
+
+PRIME LOGIC
+
+
+   int isPrime(int n){
+         if(N==1)
+        return 0;
+        else
+        {
+        int flag=0;
+        for(int i=2;i<=sqrt(N);i++){
+            if(N%i==0){
+                flag=1;
+                break;
+            }
+        }
+        if(flag==0)
+        return 1;
+        else
+        return 0;
+    }
+};
