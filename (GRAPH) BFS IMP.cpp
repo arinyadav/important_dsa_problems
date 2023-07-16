@@ -1,3 +1,32 @@
+WHEN ADJ LIST GIVEN
+
+    vector<int> bfsOfGraph(int V, vector<int> adj[]) {
+        vector <int> bfs;
+        vector <int> vis(V,0);
+        queue <int> q;
+        q.push(0);
+        while (!q.empty())
+        {
+            int node = q.front();
+            q.pop();
+            bfs.push_back(node);
+            for (auto i:adj[node])
+            {
+                if(!vis[i])
+                {
+                    vis[i]=1;
+                    q.push(i);
+                }
+            }
+        }
+        return bfs;
+    }
+
+
+
+
+WHEN ADJ LIST NOT GIVEN
+
 #include <bits/stdc++.h> 
 #include <unordered_map>
 #include <set>
