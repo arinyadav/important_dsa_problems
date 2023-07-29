@@ -1,6 +1,6 @@
 void inorder(Node* root , vector<int>&in)
 {
-    if (root=NULL)
+    if (root==NULL)
     return ;
     
     inorder(root->left,in);
