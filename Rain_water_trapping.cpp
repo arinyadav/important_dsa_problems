@@ -16,3 +16,31 @@ for(int i=0;i<n;i++)
 ans+=(min(left[i],right[i])-a[i]); 
   
 return ans;
+
+
+
+// STRIVER SHEET LEETCODE
+
+class Solution {
+public:
+    int trap(vector<int>& height) {
+        int total=0,leftmax=0,rightmax=0,i=0,j=height.size()-1;
+        while(i<=j) {
+            if(height[i]<=height[j]) {
+                if(leftmax<=height[i])
+                leftmax=height[i];
+                else
+                total+=leftmax-height[i];
+                i++;
+            }
+            else {
+                if(rightmax<=height[j])
+                rightmax=height[j];
+                else
+                total+=rightmax-height[j];
+                j--;
+            }
+        }
+        return total;
+    }
+};
